@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			ul {
+				list-style: none;
+			}
+			
+			.print-main {
+				font-family: simsun;
+				width: 16cm;
+				border: solid 1px rgba(0, 0, 0, 0.5);
+				margin: auto;
+				margin-top: 2rem;
+				margin-bottom: 7px;
+				padding: 4rem;
+				padding-top: 2rem;
+			}
+			
+			.print-h1 {
+				font-weight: inherit;
+				text-align: center;
+				width: 70%;
+				font-size: 38px;
+				margin-bottom: 3rem;
+				margin-left: 15%;
+			}
+			
+			.ticket_photo {
+				width: 80px;
+				float: left;
+				height: 115px;
+			}
+			
+			.print-ul {
+				width: 87%;
+				color: #231815;
+				padding: 0;
+				margin: auto;
+				padding-left: 4.5rem;
+				margin-left: 1rem;
+				font-size: 18px;
+			}
+			
+			.print-ul2 {
+				margin-top: 1rem;
+				width: 100%;
+				color: #231815;
+				padding: 0;
+				font-size: 18px;
+			}
+			
+			.print-attention {
+				margin-top: 2rem;
+				color: #595757;
+				font-size: 14px;
+			}
+			
+			.print-ul div {
+				color: #231815;
+				display: inline-block;
+				line-height: 32px;
+				font-size: 18px;
+				width: 85%;
+				border-bottom: 1px solid #231815;
+				padding-bottom: 0;
+			}
+			
+			.print_id {
+				width: 81.5% !important;
+			}
+			
+			.print-ul2 li {
+				padding: 0.25rem;
+			}
+			.print-ul li {
+				padding: 0.25rem;
+			}
+			.print-ul2 div {
+				color: #231815;
+				display: inline-block;
+				line-height: 32px;
+				font-size: 18px;
+				width: 89%;
+				border-bottom: 1px solid #231815;
+				padding-bottom: 0;
+			}
+			
+			.print-p {
+				font-size: 10px;
+				text-align: justify;
+				color: #595757;
+				padding-top: 0;
+				margin-bottom: 0;
+			}
+			
+			td{
+				padding: 0.1rem 0.25rem;
+			}
+			@media screen and (max-width: 768px) {
+				.print-main {
+					width: 89%;
+					padding: 1rem;
+					margin-left: 1%;
+				}
+				.ticket_photo {
+					width: 60px;
+					float: left;
+					height: 80px;
+				}
+				.print-ul {
+					width: 89%;
+					padding: 0;
+					margin-top: 1rem;
+					padding-left: 2.5rem;
+					font-size: 10px;
+				}
+				.print-ul2 {
+					width: 100%;
+					padding: 0;
+					font-size: 10px;
+				}
+				.print-attention {
+					margin-top: 2rem;
+					font-size: 14px;
+				}
+				.print-ul div {
+					display: inline-block;
+					line-height: 30px;
+					font-size: 10px;
+					width: 75%;
+					border-bottom: 1px solid #000000;
+					padding-bottom: 0;
+				}
+				.print_id {
+					width: 70% !important;
+				}
+				.print-ul2 li {
+					padding: 0.1rem;
+				}
+				.print-ul2 div {
+					display: inline-block;
+					line-height: 30px;
+					font-size: 10px;
+					width: 87%;
+					border-bottom: 1px solid #000000;
+					padding-bottom: 0;
+				}
+				.print-p {
+					font-size: 0.5rem;
+					text-align: justify;
+					padding-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="print-main">
+			<h1 class="print-h1">准考证</h1>
+			<img class="ticket_photo" id="ticket_photo" src="" />
+			<ul class="print-ul">
+				<li>姓名：
+					<div id="ticket_name"></div>
+				</li>
+				<li>考号：
+					<div id="ticket_ticket"></div>
+				</li>
+				<li>证件号：
+					<div class="print_id" id="ticket_identity"></div>
+				</li>
+
+			</ul>
+			<ul class="print-ul2">
+				<li>科目：
+					<div id="ticket_exam_name"></div>
+				</li>
+				<li>时间：
+					<div id="ticket_exam_time"></div>
+				</li>
+				<li>地点：
+					<div id="ticket_area"></div>
+				</li>
+			</ul>
+			<div id="">
+				<p class="print-attention">注意事项</p>
+				<p class="print-p">
+
+					一、考试开始前15分钟考生凭学生证和有效身份证件（身份证等）进入规定考场对号入座，并将有效证件放在考桌左上角，以便监考人员查验。考试开始指令发出后，考生才能开始答卷。<br />二、考生进入考场必须关闭各种通讯工具。
+					<br /> 参加闭卷考试考生在入场时除携带必要的文具外，不准携带其它物品(如:书籍、资料、笔记本和自备草稿纸以及具有收录、储存、记忆功能的电子工具等)。已携带入场的应按要求指定位置存放。
+				</p><br />
+				<table border="1" cellspacing="0" cellpadding="0" style="font-size:9pt;border-collapse: collapse;width:100%;">
+						<tbody>
+							<tr>
+								<td style="width:8%">
+									<p>
+										考试级别
+									</p>
+								</td>
+								<td style="width:10%">
+									<p>
+										考试科目
+									</p>
+								</td>
+								<td style="width:15%">
+									<p>
+										科目名称
+									</p>
+								</td>
+								<td style="width:10%">
+									<p>
+										具体时间
+									</p>
+								</td>
+								<td style="width:20%">
+									<p>
+										考试形式
+									</p>
+								</td>
+								<td style="width:10%">
+									<p>
+										考试分值占比
+									</p>
+								</td>
+								<td style="width:10%">
+									<p>
+										考试合格标准
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan=3>
+									<p>
+										项目经理
+									</p>
+								</td>
+								<td>
+									<p>
+										考试科目一
+									</p>
+								</td>
+								<td>
+									<p>
+										基础理论知识考查
+									</p>
+								</td>
+								<td>
+									<p>
+										9：00-11:30
+									</p>
+								</td>
+								<td>
+									<p>
+										闭卷笔试（题型为单选、多选、简答）
+									</p>
+								</td>
+								<td>
+									<p>
+										50%（总分50分）
+									</p>
+								</td>
+								<td rowspan=3>
+									<p>
+										总分60分以上（含60分）
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										考试科目二
+									</p>
+								</td>
+								<td>
+									<p>
+										项目实践能力评价（一）
+									</p>
+								</td>
+								<td>
+									<p>
+										考试前提交
+									</p>
+								</td>
+								<td>
+									<p>
+										填报表格
+									</p>
+								</td>
+								<td>
+									<p>
+										30%（总分30分）
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										考试科目二
+									</p>
+								</td>
+								<td>
+									<p>
+										项目实践能力评价（二）
+									</p>
+								</td>
+								<td>
+									<p>
+										13:00-16:00
+									</p>
+								</td>
+								<td>
+									<p>
+										现场交流问答
+									</p>
+								</td>
+								<td>
+									<p>
+										20%（总分20分）
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan=3>
+									<p>
+										高级项目经理
+									</p>
+								</td>
+								<td>
+									<p>
+										考试科目一
+									</p>
+								</td>
+								<td>
+									<p>
+										基础理论知识考查
+									</p>
+								</td>
+								<td>
+									<p>
+										第一天
+									</p>
+									<p>
+										9：00-11:30
+									</p>
+								</td>
+								<td>
+									<p>
+										闭卷笔试（题型为单选、多选、简答）
+									</p>
+								</td>
+								<td>
+									<p>
+										60%（总分60分）
+									</p>
+								</td>
+								<td rowspan=3>
+									<p>
+										科目一、二总分60分（含60分）以上，答辩合格，视为整体通过
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										考试科目二
+									</p>
+								</td>
+								<td>
+									<p>
+										项目实践能力评价（一）
+									</p>
+								</td>
+								<td>
+									<p>
+										第一天13:00-15:30
+									</p>
+								</td>
+								<td>
+									<p>
+										闭卷命题论文
+									</p>
+								</td>
+								<td>
+									<p>
+										40%（总分40分）
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										考试科目三
+									</p>
+								</td>
+								<td>
+									<p>
+										项目实践能力评价（二）
+									</p>
+								</td>
+								<td>
+									<p>
+										第二天
+									</p>
+								</td>
+								<td>
+									<p>
+										现场答辩（15分钟）
+									</p>
+								</td>
+								<td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		var pare = window.opener;
+		var photos = pare.document.getElementById("img_div");
+		var names = pare.document.getElementById("name_div");
+		var ticket = pare.document.getElementById("ticket_div");
+		var identity = pare.document.getElementById("identity_div");
+		//var register = pare.document.getElementById("register_div");
+		var exam_name = pare.document.getElementById("exam_name_div");
+		var exam_time = pare.document.getElementById("exam_time_div");
+		var areas = pare.document.getElementById("area_div");
+		//ticket_div
+
+		//console.log(document.getElementById("name_div"));
+		document.getElementById("ticket_photo").src = photos.innerHTML;
+		document.getElementById("ticket_name").innerHTML = names.innerHTML;
+		document.getElementById("ticket_ticket").innerHTML = ticket.innerHTML;
+		document.getElementById("ticket_identity").innerHTML = identity.innerHTML;
+		//document.getElementById("ticket_register").innerHTML = register.innerHTML;
+		document.getElementById("ticket_exam_name").innerHTML = exam_name.innerHTML;
+		document.getElementById("ticket_exam_time").innerHTML = exam_time.innerHTML;
+		document.getElementById("ticket_area").innerHTML = areas.innerHTML;
+	</script>
+
+</html>

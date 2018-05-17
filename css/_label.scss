@@ -1,0 +1,139 @@
+.xs_label {
+    position: relative;
+    width: 20rem;
+    height: 4rem;
+    margin-left: 2rem;
+    display: inline-block;
+    
+    input {
+        background-color: rgba(255,255,255,0);
+        border: none;
+         color: $grey900;
+        top: 1.5rem;
+        width: 20rem;
+        position: absolute;
+        line-height: 1rem;
+        outline: none;
+        z-index: 100;
+        border-bottom: 2px solid  $grey600;
+    }
+    label {
+        color: $grey600;
+        top: 1.4rem;
+        position: absolute;
+        line-height: 1rem;
+    }
+    span{
+        position: absolute;
+       color: $grey375;
+        top: 2.8rem;
+        font-size: 0.8rem;
+    }
+}
+    .transition {
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
+
+
+
+.focus_input{
+    
+     &:after{
+        content: "\270d";
+        position: absolute;
+        top: 0.75rem;
+        right: 0;
+        color: $blue600;
+        font-size: 200%;
+    }
+     .label{
+         top: 0.2rem;
+         transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+         color: $blue300;
+     }
+     .label_text{
+         color: $blue300;
+    }
+     .select{
+             color: $blue300;
+        }
+        .message{
+            color: $blue100;
+        }
+        .input{
+             border-bottom: 2px solid $blue300; 
+             color: $blue600;
+        }
+        .text_content{
+             color: $blue600;
+             border: solid 1px  $blue600;
+        }
+}
+//改变后离开鼠标
+
+.change_input{
+     &:after{
+        content: "✓" ;
+        position: absolute;
+        top: 1.4rem;
+        right: 0rem;
+        color: $green600;
+     }
+    .label{
+        top: 0.2rem;
+         color: $green300;
+    }
+    .label_text{
+         color: $green300;
+    }
+    .select{
+             color: $green300;
+        }
+        .message{
+            color: $green100;
+        }
+        .input{
+             border-bottom: 2px solid $green300; 
+             color: $green600;
+        }
+        .text_content{
+              color: $green600;
+               border: solid 1px  $green600;
+        }
+}
+//不改变后离开鼠标
+.nochange_input{
+    .label{
+        top: 0.2rem;
+         color: $grey600;
+    }
+     .label_text{
+         color: $grey600;
+    }
+    .select{
+             color: $grey600;
+        }
+        .message{
+            color: $grey375;
+        }
+        .input{
+             border-bottom: 2px solid $grey600; 
+             color: $grey900;
+        }
+        .text_content{
+               color: $grey900;
+               border: solid 1px  $grey900;
+        }
+}
+.no_after{
+  &:after{
+        content: " ";
+     }  
+}
+.text_after{
+  &:after{
+       position: absolute;
+        left: -1.3rem;
+       // content: " ";
+     }  
+}

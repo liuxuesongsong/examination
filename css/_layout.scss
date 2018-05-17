@@ -1,0 +1,73 @@
+@import "grid/main";
+@import "mixins/shadow";
+
+.header{
+  .hgroup{
+    @extend .col-lg-4;
+  }
+}
+.globalnav{
+  z-index: 5;
+  @extend .mdc-elevation--z5;
+}
+.uesrCenter{
+  @extend .col-lg-12, .col-md-12,.col-sm-12,.col-xs-12;
+  
+}
+.dcol{
+  @extend .col-md-12, .col-lg-6,.col-sm-12;
+}
+.tcol{
+  @extend .col-lg-4;
+}
+.qcol{
+  @extend .col-lg-3, .col-sm-6;
+}
+.aside{
+  @extend .col-lg-3, .col-md-4,.col-sm-4,.col-xs-12;
+}
+.logo{
+  @extend .col-lg-2,.col-md-2,.col-sm-4,.col-xs-4;
+}
+.nav{
+  z-index: 4;
+  @extend .col-lg-2,.col-md-2,.col-sm-2,.col-xs-2,.mdc-elevation--z4;
+}
+.content, .striangleDiv, .info_list{
+  @extend .col-lg-12,.col-md-12,.col-sm-12,.col-xs-12;
+}
+.exam_list{
+    @extend .col-lg-11, .col-md-11,.col-sm-11,.col-xs-11,.col-xs-offset-1,.col-lg-offset-1,.col-md-offset-1,.col-sm-offset-1; 
+}
+.state_list{
+   @extend .col-lg-10, .col-md-10,.col-sm-10,.col-xs-10,.col-xs-offset-1,.col-lg-offset-1,.col-md-offset-1,.col-sm-offset-1; 
+}
+.info_list{
+  z-index: 0;
+}
+.striangleDiv{
+  z-index: 3;
+  @extend .mdc-elevation--z3;
+}
+.info,.title_div{
+  @extend .col-xs-12,.col-sm-12, .col-md-10, .col-md-offset-1;
+}
+.details{
+  @extend .col-lg-3;
+}
+ .timeDl{
+     @extend .col-lg-5, .col-md-5,.col-sm-5,.col-xs-12,.col-lg-offset-2,.col-md-offset-2,.col-sm-offset-2; 
+     
+ }
+  .timeDl1{
+     @extend .col-lg-5, .col-md-5,.col-sm-5,.col-xs-12; 
+     
+ }
+  .dlDown{
+     @extend .col-sm-12, .col-lg-6; 
+     
+ }
+   .dlDown1{
+     @extend .col-sm-12, .col-lg-12; 
+     
+ }

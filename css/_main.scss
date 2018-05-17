@@ -1,0 +1,2012 @@
+.userCenter {
+    padding: 0;
+    color: $primary-text-color;
+    font-size: 0.875rem;
+    .article {
+        padding-right: 2rem;
+    }
+    .hgroup {
+        box-shadow: 0.5rem 0 0 $primary-color inset;
+        //padding-bottom:0.5rem;
+        padding-left: 2rem;
+        margin: 4rem 0 1rem;
+    }
+    
+    .error {
+         &:after{
+            content: "✕";
+            position: absolute;
+            top: 1.5rem;
+            right: 0rem;
+            color: $red600;
+         }
+        .label,.select{
+             color: $red300;
+        }
+        .message{
+            color: $red100;
+        }
+        .input{
+             border-bottom: 2px solid $red300; 
+             color: $red600;
+        }
+    } 
+    
+   
+    .ability_warn{
+            line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #377aaf;
+    margin-left: 8%;
+    }
+    .abR0 {
+        position: absolute;
+        right: 0;
+    }
+    .left4 {
+        left: 4% !important;
+    }
+    .left17 {
+        left: 9% !important;
+    }
+    .left10 {
+        left: 10% !important;
+    }
+    .title_div {
+        border: none;
+        box-shadow: none;
+    }
+    .width8rem {
+        width: 8rem !important;
+    }
+     .width9rem {
+        width: 9rem !important;
+    }
+    .width10rem {
+        width: 9.65rem !important;
+    }
+    .width14rem {
+        width: 14rem !important;
+    }
+    .width5rem {
+        width: 5rem !important;
+    }
+    .width6rem {
+        width: 6rem !important;
+    }
+    .width21 {
+        width: 21rem;
+    }
+    
+    .width20rem {
+        width: 20rem !important;
+    }
+    .width19p5rem{
+         width: 19.5rem !important;
+    }
+    .width19rem {
+        width: 19rem !important;
+    }
+    .width16rem {
+        width: 16rem !important;
+    }
+    .width15rem {
+        width: 15rem !important;
+    }
+    .width50 {
+        width: 50% !important;
+    }
+    .change_status_btn{
+        float: none !important;
+        margin-top:0rem ;
+    }
+    .floatL {
+        float: left !important;
+    }
+    .padding0 {
+        padding: 0 !important;
+    }
+    .check {
+        float: left;
+        padding-top: 6rem;
+    }
+    .logoImg {
+        width: 4rem;
+        height: 1.2rem;
+        float: right;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .bc_color_blue{
+        background-color: $nav-user-active !important;
+    }
+    .marginL1rem {
+        margin-left: 1rem;
+    }
+    .marginL1p5rem {
+        margin-left: 1.5rem !important;
+    }
+     .marginL2rem {
+        margin-left: 2rem !important;
+    }
+    .change_head{
+        margin: 1rem 2rem;
+    }
+    .Lb025{
+        left: -0.25rem !important;
+    }
+    .L0{
+        left: 0rem !important;
+    }
+    .L25 {
+        left: 18% !important;
+    }
+    .L9rem {
+        left: 9rem !important;
+    }
+     .L3p2rem {
+        left: 3.2rem !important;
+    }
+    .L3p4rem {
+        left: 3.4rem !important;
+    }
+     .Tb3rem{
+        top:-3rem !important;
+    }
+     .Tb2rem{
+        top:-2rem !important;
+    }
+    .T4rem{
+        top:4rem !important;
+    }
+    .Tb0L14p5{
+        top: 0rem !important;
+        left: 14.5rem !important;
+    }
+     .Tb8L6p3{
+        top: -8rem !important;
+        left: 6.3rem !important;
+    }
+    .Tb8Lb25{
+        top: -8rem !important;
+        left: -22.8rem !important;
+    }
+    .Tb12p5Lb25{
+        top: -12.5rem !important;
+        left: -23.8rem !important;
+    }
+    .height210{
+        height: 210px !important;
+    }
+    .height250{
+        height: 250px !important;
+    }
+    .height220{
+        height: 220px !important;
+    }
+    .height230{
+        height: 230px !important;
+    }
+    .marginT0rem {
+        margin-top: 0 !important;
+    }
+    .marginT1rem {
+        margin-top: 1rem;
+    }
+    .marginT05rem {
+        margin-top: 0.5rem !important;
+    }
+    .paddingL1rem {
+        padding-left: 1rem;
+    }
+    .paddingT1rem{
+        padding-top: 1rem;
+    }
+    .marginT2rem {
+        margin-top: 2rem !important;
+    }
+    .marginT2p6rem {
+        margin-top: 2.6rem;
+    }
+    .marginT3p5rem {
+        margin-top: 3.5rem;
+    }
+    .marginT4rem {
+        margin-top: 4rem;
+    }
+    .marginL6 {
+        margin-left: 6%;
+    }
+    .marginL6p5 {
+        margin-left: 6.5%;
+    }
+    .marginL5 {
+        margin-left: 5%;
+    }
+    .marginL9p5 {
+        margin-left: 9.5%;
+    }
+    .marginL8p5 {
+        margin-left: 8.5%;
+    }
+    .marginL7 {
+        margin-left: 7%;
+    }
+    .marginL7p5 {
+        margin-left: 7.5%;
+    }
+    .marginL8 {
+        margin-left: 8%;
+    }
+    .marginL8p3 {
+        margin-left: 8.3%;
+    }
+    .marginL8p5 {
+        margin-left: 8.5%;
+    }
+    .marginL9 {
+        margin-left: 9%;
+    }
+    .marginL10 {
+        margin-left: 10%;
+    }
+    .marginL11 {
+        margin-left: 11%;
+    }
+    .marginL12 {
+        margin-left: 12%;
+    }
+    .marginL12p5 {
+        margin-left: 12.5%;
+    }
+    .marginL13 {
+        margin-left: 13%;
+    }
+    .marginL13p5 {
+        margin-left: 13.5%;
+    }
+    .marginL14 {
+        margin-left: 14%;
+    }
+    .marginL18 {
+        margin-left: 18%;
+    }
+    .marginL4p3rem {
+        margin-left: 4.3rem;
+    }
+    .marginB2rem{
+        margin-bottom: 2rem !important;
+    }
+    .marginB05rem{
+        margin-bottom: 0.5rem !important;
+    }
+    .Tb3 {
+        top: -3.05rem;
+    }
+    .Tb6 {
+        top: -6rem;
+    }
+    .Tb2L6 {
+        top: -2rem;
+        left: 6rem;
+    }
+    .Tb2 {
+        top: -2rem;
+    }
+    .marginT3 {
+        margin-top: 3rem;
+    }
+    .marginT4p5 {
+        margin-top: 4.5rem;
+    }
+    .marginT5 {
+        margin-top: 5rem;
+    }
+    .marginT6p5 {
+        margin-top: 6.5rem;
+    }
+    .marginR1rem {
+        margin-right: 1rem;
+    }
+    .marginL2rem {
+        margin-left: 2rem;
+    }
+    .marginL1p5rem {
+        margin-left: 1.5rem;
+    }
+    .marginR2rem {
+        margin-right: 2rem;
+    }
+    .marginR3p2rem {
+        margin-right: 3.2rem;
+    }
+    .marginR4rem {
+        margin-right: 4rem;
+    }
+    .marginB1rem {
+        margin-bottom: 1rem;
+    }
+    .paddingB0 {
+        padding-bottom: 0 !important;
+    }
+    .paddingT2rem {
+        padding-top: 2rem;
+    }
+    .width45 {
+        width: 45%;
+        margin-left: 2%;
+    }
+    .width30 {
+        width: 7rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+    .input_bottom{
+            border-bottom: 2px solid #377aaf !important;
+            outline: none;
+                }
+    .ability_label{
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 1.5rem;
+    }
+    .ability_bottom{
+        
+    }
+    
+    .cursor {
+        cursor: pointer;
+    }
+    .level_select{
+            float: right;
+    margin-top: 2rem;
+    margin-right: 14rem;
+    }
+    .alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+    .alert h4 {
+        margin-top: 0;
+        color: inherit;
+    }
+    .alert .alert-link {
+        font-weight: bold;
+    }
+    .alert>p,
+    .alert>ul {
+        margin-bottom: 0;
+    }
+    .alert>p+p {
+        margin-top: 5px;
+    }
+    .alert-dismissable,
+    .alert-dismissible {
+        padding-right: 35px;
+    }
+    .alert-dismissable .close,
+    .alert-dismissible .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        color: inherit;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #3c763d;
+    }
+    .alert-success hr {
+        border-top-color: #c9e2b3;
+    }
+    .alert-success .alert-link {
+        color: #2b542c;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #31708f;
+    }
+    .alert-info hr {
+        border-top-color: #a6e1ec;
+    }
+    .alert-info .alert-link {
+        color: #245269;
+    }
+    .alert-warning {
+        background-color: #fcf8e3;
+        border-color: #faebcc;
+        color: #8a6d3b;
+    }
+    .alert-warning hr {
+        border-top-color: #f7e1b5;
+    }
+    .alert-warning .alert-link {
+        color: #66512c;
+    }
+    .alert-danger {
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        color: #a94442;
+    }
+    .alert-danger hr {
+        border-top-color: #e4b9c0;
+    }
+    .alert-danger .alert-link {
+        color: #843534;
+    }
+    .z_index100 {
+        z-index: 100;
+    }
+    .c_level_label {
+        position: absolute;
+        top: 0.2rem;
+        color: $grey600;
+        display: block;
+    }
+    .c_level_select {
+        border: none;
+        position: absolute;
+        width: 20rem;
+        color: $grey900;
+        top: 1.5rem;
+        margin-bottom: 1rem;
+        outline: none;
+        border-bottom: 2px solid $grey600;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 3.75rem;
+        background-color: $nav-user;
+        color: $primary-color-text;
+        bottom: 0;
+        left: -17%;
+        ul {
+            @extend .row;
+            margin-top: -0.5rem;
+            padding: 1.09374rem;
+        }
+        p:first-child {
+            border: none;
+        }
+        p {
+            margin: 0;
+            border-top: 1px solid;
+            padding-top: 1rem;
+            width: 100%;
+            padding-left: 3rem;
+            margin-top: 1rem;
+            font-size: 1.125rem;
+            line-height: 1.6875rem;
+        }
+        a {
+            width: 100%;
+            display: block;
+            font-size: 0.875rem;
+            line-height: 1.3125rem;
+            margin: auto;
+            margin-left: 0.5rem;
+            color: $primary-color-text;
+            border-radius: 5px;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 3rem;
+            line-height: 1rem;
+        }
+        li.active a {
+            background-color: $nav-user-active;
+        }
+        li.active a:hover,
+        a:hover {
+            background-color: $nav-user-hover;
+            color: $primary-color-text;
+        }
+    }
+    .striangleDiv {
+        background-color: $white;
+        position: fixed;
+        right: 0;
+        height: 3.375rem;
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+            /*初始状态 透明度为0*/
+        }
+        50% {
+            opacity: 0.5;
+            /*中间状态 透明度为0*/
+        }
+        100% {
+            opacity: 1;
+            /*结尾状态 透明度为1*/
+        }
+    }
+    .opacity {
+        -webkit-animation-name: fadeIn;
+        /*动画名称*/
+        -webkit-animation-duration: 0.3s;
+        /*动画持续时间*/
+        -webkit-animation-iteration-count: 1;
+        /*动画次数*/
+        -webkit-animation-delay: 0s;
+        /*延迟时间*/
+    }
+    @-webkit-keyframes fadeIn_l {
+        0% {
+            right: -100%;
+            /*初始状态 透明度为0*/
+        }
+        100% {
+            right: 0;
+            /*结尾状态 透明度为1*/
+        }
+    }
+    .l_fadeIn {
+        -webkit-animation-name: fadeIn_l;
+        /*动画名称*/
+        -webkit-animation-duration: 0.3s;
+        /*动画持续时间*/
+        -webkit-animation-iteration-count: 1;
+        /*动画次数*/
+        -webkit-animation-delay: 0s;
+        /*延迟时间*/
+    }
+    .striangle {
+        position: absolute;
+        left: 0rem;
+        color: $primary-color;
+        line-height: 3.375rem;
+        padding: 0;
+        font-size: 1.125rem;
+    }
+    .ver_middle {
+        vertical-align: middle;
+        margin-top: -0.2rem;
+    }
+    .chart {
+        background-color: #FFFFFF;
+        width: 82%;
+        border: solid $greyB3 1px;
+        position: absolute;
+        top: 18rem;
+        padding-bottom: 1.875rem;
+        left: 9%;
+    }
+    .padding_l_r {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .color_ing {
+        color: $nav-user-active !important;
+    }
+    .border_ing {
+        border: solid 1px $nav-user-active !important;
+    }
+    .bcolor_ing {
+        background-color: $nav-user-active !important;
+    }
+    .color_ed {
+        color: $charted !important;
+    }
+    .border_ed {
+        border: solid 1px $charted !important;
+    }
+    .bcolor_ed {
+        background-color: $charted !important;
+    }
+    .chart_hr {
+        width: 4%;
+        position: relative;
+        border: solid 1px #999999;
+        top: 3px;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .chart_hr_long {
+        width: 7.5%;
+        position: relative;
+        border: solid 1px #999999;
+        top: 3px;
+        display: inline-block;
+        margin-right: -4px;
+    }
+    .chart_load {
+        position: absolute;
+        top: 1.55rem;
+        left: 7.6%;
+    }
+    .chart_div {
+        display: inline-block;
+        margin-right: -8px;
+        margin-left: 7px;
+    }
+    .chart_head {
+        position: relative;
+        top: -16px;
+        right: 16px;
+    }
+    .chart_road {
+        display: inline-block;
+        margin-right: -4px;
+        margin-top: 1.5rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: solid #999999 1px;
+    }
+    .chart_span {
+        font-size: 14px;
+        color: #999999;
+    }
+    .chart_road_in {
+        margin: auto;
+        text-align: center;
+        padding-top: 5px;
+        color: #FFFFFF;
+        font-size: 20px;
+        margin-top: 4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #999999;
+    }
+    .p_card_div {
+        margin: 1rem;
+        padding: 0.5rem;
+        box-shadow: -1px 2px 2px $grey-shadow;
+    }
+    #applyInfoForm,#change_model_form{
+        .xs_label{
+            margin-left: 8rem;
+        }
+    }
+    .info {
+        background-color: $white;
+        //box-shadow: 2px 2px 5px $grey-shadow;
+        margin-bottom: 2rem;
+    }
+    .content {
+        position: fixed;
+        right: 0;
+        top: 3.75rem;
+        bottom: 0;
+        background-color: $main-color;
+        ;
+    }
+    .info_list {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        // left: 25%;
+        overflow-y: auto;
+        top: 9.75rem;
+    }
+    .top11 {
+        top: 11.5rem !important;
+    }
+    .top10 {
+        top: 10rem !important;
+    }
+    .dispaly_in_block {
+        display: inline-block;
+    }
+    .grading_num {
+        width: 100%;
+        margin: auto;
+        float: left;
+        height: 20px;
+    }
+    .info_button {
+        width: 50%;
+        position: relative;
+        left: 4%;
+        bottom: 0;
+        // left: 25%;
+    }
+    .ispay {
+        background-color: $white;
+        margin-top: 0.8rem;
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+        box-shadow: none;
+        border-radius: 0;
+        border: 1px solid $greyB3;
+        color: $nav-user-active;
+    }
+    .ispay_active {
+        color: $white;
+        margin-top: 0.8rem;
+        box-shadow: none;
+        width: 140px;
+        height: 45px;
+        font-size: 18px;
+        border: 1px solid $greyB3;
+        border-radius: 0;
+        background-color: $nav-user-active;
+    }
+    .check_list {
+        position: fixed;
+        right: 0;
+        left: 1rem;
+        bottom: 0;
+        top: 11.8rem;
+        overflow-y: auto;
+        table {
+            // width: 88% !important;
+            border-top: 1px solid transparent !important;
+        }
+    }
+    .state_list {
+        // left: 25%;
+        top: 5rem;
+        bottom: 0;
+    }
+    .width100 {
+        width: 100%;
+    }
+    .width83 {
+        width: 83.3%;
+    }
+    .overFlow-y-auto {
+        overflow-y: auto;
+    }
+    .infoCards {
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    .p_work {
+        //margin-left: 0.5rem;
+        width: 20rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        resize: none;
+        padding: 0.5rem;
+    }
+    .textarea{
+        display: inline-block;
+        width: 21rem;
+    }
+    .msg_div {
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+        left: 42%;
+    }
+    .msg {
+        margin: 2rem 3rem;
+    }
+    .msg_close {
+        float: right;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1;
+        color: #000000;
+        text-shadow: 0 1px 0 #ffffff;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+    }
+    .msg_close:hover,
+    .msg_close:focus {
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    button.msg_close {
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        -webkit-appearance: none;
+    }
+    .cy_label {
+        font-size: 1.125rem;
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+        color: rgba(0, 0, 0, 0.5);
+        
+    }
+    .cy_label_color{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .cyc_label {
+        line-height: 1rem;
+        top: 0;
+        position: relative;
+        color: $grey600;
+        //margin-left: 0.5rem;
+    }
+    .content,
+    .tab-pane {
+        z-index: 1;
+        display: none;
+        visibility: hidden;
+    }
+    .content,
+    .active {
+        display: block;
+        visibility: visible;
+    }
+    .marginT0 {
+        margin-top: 0 !important;
+    }
+    .time_div {
+        cursor: pointer;
+        margin-right: 20px;
+        width: 170px;
+        font-size: 14px;
+        margin-top: 14px;
+        display: inline-block;
+        .area_name_div {
+            width: 100%;
+            border-radius: 5px;
+            color: $primary-color-text;
+            span {
+                line-height: 1.8rem;
+            }
+        }
+        .shadowN {
+            box-shadow: none !important;
+        }
+        .data_shadow {
+            box-shadow: 1px 2px 7px #45535c;
+        }
+        .date_div {
+            width: 100%;
+            display: block;
+            margin: auto;
+            line-height: 45px;
+            padding-left: 0.5rem;
+            border-bottom: 2px solid $primary-color-text;
+            vertical-align: auto;
+            font-size: 24px;
+            height: 45px;
+        }
+        .span_margin {
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .marginR015 {
+            margin-right: 0.15rem;
+        }
+        .is_full {
+                top: -1rem;
+                margin-top: 0rem;
+                margin-right: 0.5rem;
+                float: right;
+                right: 0.1rem;
+        }
+        .full {
+            background-color: $full !important;
+        }
+        .full_color {
+            color: $full !important;
+        }
+        .jan {
+            background-color: $jan;
+        }
+        .feb {
+            background-color: $feb;
+        }
+        .mar {
+            background-color: $mar;
+        }
+        .apr {
+            background-color: $apr;
+        }
+        .may {
+            background-color: $may;
+        }
+        .jun {
+            background-color: $jun;
+        }
+        .jul {
+            background-color: $jul;
+        }
+        .aug {
+            background-color: $aug;
+        }
+        .sep {
+            background-color: $sep;
+        }
+        .oct {
+            background-color: $oct;
+        }
+        .nov {
+            background-color: $nov;
+        }
+        .dec {
+            background-color: $dec;
+        }
+    }
+    .student_table {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+        border: solid 1px #b3b3b3;
+        tr {
+            height: 35px;
+        }
+        .twidth42 {
+            width: 42px;
+        }
+        .twidth50 {
+            width: 50px;
+        }
+        .twidth73 {
+            width: 73px;
+        }
+        .twidth85 {
+            width: 85px;
+        }
+        .twidth86 {
+            width: 86px;
+        }
+        .twidth160 {
+            width: 160px;
+        }
+        .twidth164 {
+            width: 164px;
+        }
+        .trlist:hover {
+            background-color: #F0F0F0;
+        }
+    }
+    .student_table_name {
+        height: 50px !important;
+    }
+    .state_table,
+    .state_table_name {
+        width: 100%;
+        text-align: center;
+        .twidth5 {
+            width: 5%;
+        }
+        .twidth15 {
+            width: 15%;
+        }
+        .twidth16p6 {
+            width: 16.6%;
+        }
+        .twidth20 {
+            width: 20%;
+        }
+        
+         .twidth25 {
+            width: 25%;
+        }
+        .twidth30 {
+            width: 30%;
+        }
+    }
+    .width620 {
+        width: 620px;
+    }
+    .marginL2remi {
+        margin-left: 2rem !important;
+    }
+    .marginL16b {
+        margin-left: 8.5% !important;
+    }
+    .year_head {
+        font-size: 24px;
+        color: $nav-user;
+        line-height: 60px;
+        width: 90%;
+        margin-bottom: 7px;
+        border-bottom: 1px solid $nav-user;
+    }
+    .student_0 {
+        background-color: $primary-color-text;
+        border-radius: 5px;
+        margin: auto;
+        border: 1px solid $full;
+        .prompt {
+            line-height: 2rem;
+            font-size: 1.125rem;
+            margin: auto;
+            text-align: center;
+            margin-top: 1.5rem;
+            width: 100%;
+            color: $prompt-color;
+            img {
+                vertical-align: middle;
+                margin-top: -0.1rem;
+                margin-right: 0.4rem //top: 1rem;
+            }
+        }
+        .prompt_reason {
+            font-size: 0.875rem;
+            margin: auto;
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 2.125rem;
+        }
+    }
+    .state_table_name {
+        height: 50px;
+        td {
+            border-bottom: solid 1px #b3b3b3;
+        }
+    }
+    .exam_div {
+        right: 0;
+        width: 84%;
+        position: fixed;
+        overflow-y: scroll;
+        top: 3.75rem;
+        bottom: 1rem;
+        //overflow-y: scroll;
+    }
+    .state_table {
+        //height: 500px;
+        //overflow-y: scroll;
+        margin-bottom: 2rem;
+        border: solid 1px #b3b3b3;
+        .trlist {
+            height: 40px;
+        }
+        .trlist:hover {
+            td {
+                border: 1px solid #F0F0F0;
+            }
+            background-color: #F0F0F0;
+        }
+    }
+    .check_content {
+        padding-left: 2rem;
+        margin: auto;
+    }
+    .check_title_div {
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    .check_title {
+        font-size: 24px;
+        margin-right: 3rem;
+    }
+    .marginT1em {
+        margin-top: 1rem;
+    }
+    .marginL05em {
+        margin-left: 0.5rem;
+    }
+    .width41p2rem{
+        width: 41.2rem !important;
+    }
+    .marginR17 {
+        margin-right: 16.667%;
+    }
+    .marginTb1rem {
+        margin-top: -1.7rem;
+    }
+    .marginR4p5rem {
+        margin-right: 4.5rem;
+    }
+    .width23p5rem{
+        width: 23.5rem !important;
+    }
+    .inputNborder {
+        border: none !important;
+    }
+    .container {
+        margin-top: 0.5rem;
+    }
+    .p_1inch {
+        position: absolute;
+        top: 75px;
+        text-align: center;
+    }
+    .btn {
+        // border: 1px solid $accent-color;
+        border-radius: 0.2rem;
+        text-align: center;
+        border: none;
+        float: right;
+        margin-right: 1rem;
+        margin-top: -0.75rem;
+        padding: 0.2rem 1rem;
+        color: $primary-color-text;
+        background-color: $nav-user-active;
+    }
+    .drawer_btn {
+        // border: 1px solid $accent-color;
+        border-radius: 0.2rem;
+        text-align: center;
+        border: none;
+        float: left;
+        margin-top: -0.75rem;
+        padding: 0.2rem 1rem;
+        color: $primary-color-text;
+        background-color: $nav-user-active;
+    }
+    .addBtn {
+        // border: 1px solid $accent-color;
+        border-radius: 0.2rem;
+        text-align: center;
+        border: none;
+        float: right;
+        margin-top: -2rem;
+        padding: 0.2rem 1rem;
+        color: $primary-color-text;
+        background-color: $nav-user-active;
+    }
+    .adminCard {
+        width: 45%;
+        margin-left: 3%;
+        float: left;
+        margin-top: 0.5rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        background-color: $primary-color-text;
+        ;
+        border: 1px solid $list-border-color;
+        box-shadow: -1px 2px 2px $grey-shadow;
+    }
+    .modal-content1 {
+        width: 28rem;
+        border-radius: 0.8125rem;
+        position: relative;
+        background-color: #ffffff;
+        border: 1px solid #999999;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+        background-clip: padding-box;
+        outline: 0;
+        margin-top: 6rem;
+    }
+    .bcgroundblue {
+        color: $primary-color-text;
+        margin-top: 0.8rem;
+        background-color: $nav-user-active;
+    }
+    .photo_send {
+        color: $primary-color-text;
+        margin-top: -1.5rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        background-color: $nav-user-active;
+    }
+    .color000 {
+        color: rgba(255, 255, 255, 0.26);
+    }
+    .outlineN {
+        outline: none;
+    }
+    
+    .closes {
+        border: none;
+        float: right;
+        margin-right: 1rem;
+        background-color: $primary-color-text;
+        font-size: 1.5rem;
+        outline: none;
+        padding: 0;
+        span {
+            padding: 0;
+        }
+    }
+    .paycloses {
+        border: none;
+        float: right;
+        margin-right: 1rem;
+        margin-top: -1.2rem;
+        font-weight: 100;
+        background-color: transparent;
+        font-size: 2.2rem;
+        outline: none;
+        padding: 0;
+        color: $primary-color-text;
+        span {
+            padding: 0;
+        }
+    }
+    .changeLoginInput {
+        width: 50%;
+    }
+    .changeLoginBtn {
+        margin-right: 5rem;
+    }
+    .applyAttention {
+        width: 100%;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+    .marginT1rem {
+        margin-top: 2rem;
+    }
+    .marginT3rem {
+        margin-top: 3rem;
+    }
+    .marginTp75rem {
+        margin-top: 0.75rem;
+    }
+    .marginT5rem {
+        margin-top: 5rem !important;
+    }
+    .drawer-back-btn {
+        width: 5rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+    .draw-list {
+        position: fixed;
+        top: 5rem;
+        bottom: 0;
+    }
+    .info_z {
+        margin: auto;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .floatR {
+        float: right;
+    }
+    .photo {
+        margin-top: 1rem;
+        width: 50px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+    .select_id{
+        border: none;
+       color: inherit;
+    }
+    .none {
+        display: none;
+    }
+    .borderN {
+        box-shadow: none;
+        border: none;
+    }
+    .p_times_div {
+        width: 165px;
+        height: 150px;
+        display: inline-block;
+    }
+    .p_other_div {
+        float: right;
+        margin-right: 3rem;
+        border-left: 1px solid $nav-user-active;
+        width: 420px;
+        //padding-left: 50px;
+        display: inline-block;
+    }
+    .add_experience,
+    .p_card_btn {
+        outline: none;
+        cursor: pointer;
+        text-align: center;
+        font-weight: 100;
+        position: relative;
+        border-radius: 50%;
+    }
+    .add_experience {
+        width: 30px;
+        height: 30px;
+        left: 16.5rem;
+        font-size: 1.5rem;
+        top: -1rem;
+        background-color: $primary-color-text;
+        color: $nav-user-active;
+        border: 1px solid $greyB3;
+    }
+    .add_experience:hover::before{
+       // content: "hahaha";
+    }
+    .p_card_btn {
+        position: relative;
+        //left: -25rem;
+        top: 0.5rem;
+        border: none;
+        width: 25px;
+        height: 25px;
+        color: $primary-color-text;
+        background-color: $nav-user-active;
+    }
+    .bcwhite {
+        background-color: $primary-color-text;
+    }
+    .padding30 {
+        padding: 30px;
+    }
+    .pay_div {
+        margin-left: 8.2%;
+        // padding: 15px;
+        //padding-bottom: 26.5px;
+        width: 83.3%;
+        bottom: 1rem;
+        background-color: $primary-color-text;
+    }
+    .grey_b3 {
+        border: 1px solid $greyB3;
+    }
+    .pay_card_div {
+        width: 160px;
+        margin-top: 28px;
+        padding-bottom: 1rem;
+        margin-left: 28px;
+        display: inline-block;
+        border: solid 1px $table-tr-color;
+    }
+    .pay_card_div:last-child {
+        margin-bottom: 28px;
+    }
+    .check_div {
+        margin-top: -1rem;
+        position: relative;
+    }
+    .is_cancel {
+        transform: rotate(90deg);
+        float: right;
+        cursor: pointer;
+        margin-top: 0.9rem;
+        font-size: 1.5rem;
+        color: $nav-user-active;
+    }
+    .is_cancel_btn {
+        width: 68px;
+        line-height: 20px;
+        font-size: 10px;
+        height: 24px;
+        top: 0.3rem;
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+    .pay_state {
+        width: 100%;
+        height: 50px;
+        letter-spacing: 0.125rem;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 0.5rem;
+        color: $primary-color-text;
+        font-size: 17.5px;
+    }
+    .left1rem {
+        left: 1rem;
+    }
+    .pass_check {
+        background-color: $pass_check;
+    }
+    .paying {
+        background-color: $paying;
+    }
+    .payed {
+        background-color: $payed;
+    }
+    .pay_name {
+        font-size: 18px;
+        width: 100px;
+        height: 24px;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        top: 0.45rem;
+    }
+    .btnPrint,.btn_ability {
+        border-radius: 0.2rem;
+        text-align: center;
+        border: none;
+        margin-left: 0.4rem;
+        //margin-left: 30%;
+        padding: 0.2rem 0.5rem;
+        color: $primary-color-text;
+        background-color: $nav-user-active;
+    }
+   
+    .examroom {
+        width: 100%;
+        height: 20px;
+        word-break: keep-all;
+        /* 不换行 */
+        white-space: nowrap;
+        /* 不换行 */
+        overflow: hidden;
+        /* 内容超出宽度时隐藏超出部分的内容 */
+        text-overflow: ellipsis;
+    }
+    .word_break{
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .pay_subject,
+    .pay_basic {
+        margin: 0 15px;
+        padding: 8.5px 0;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .pay_subject {
+        border-bottom: 1px solid $greyB3;
+    }
+    .pay_basic {
+        color: $greyB3;
+    }
+    .hidden {
+        visibility: hidden;
+    }
+    .stateBtn {
+        width: 5rem;
+        border-radius: 0.2rem;
+        text-align: center;
+        border: none;
+        float: right;
+        line-height: 2rem;
+        margin-right: 2rem;
+        color: $primary-color-text;
+        background-color: $nav-user-active;
+    }
+    h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $secondary-text-color;
+        padding: 0;
+        margin: 0;
+    }
+    h2 {
+        font-size: 1rem;
+        color: $secondary-text-color;
+        padding: 0;
+        margin: 1rem 0 0;
+        padding-bottom: 0;
+    }
+    hr {
+        margin-top: 0.5rem;
+        width: 96%;
+        margin-left: -0.2%;
+        border: 1px solid $nav-user-active;
+    }
+    .h2 {
+        font-size: 1rem;
+        color: $secondary-text-color;
+        padding: 0;
+        margin: 1rem 0 0;
+        padding-bottom: 0;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+    a {
+        display: inline-block;
+        color: $primary-color-light;
+        padding: 0.4rem;
+        line-height: 1.5rem;
+    }
+    form {
+        .holdBasicBtn {
+            width: 5rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            border: none;
+            float: right;
+            margin-right: 2rem;
+            color: $primary-color-text;
+            background-color: $nav-user-active;
+        }
+        .clearBoth {
+            clear: both;
+        }
+        .changeLoginBtn {
+            position: relative;
+            top: -1rem;
+        }
+    }
+    .basic-form {
+        margin: auto;
+        padding-top: 1.5625rem;
+        padding-bottom: 1.5625rem;
+    }
+    .c_level_div {
+    }
+    .wx_logo {
+        height: 2.5rem;
+        width: 2rem;
+        display: inline;
+        margin: auto;
+        vertical-align: middle;
+        margin-left: 1.6rem;
+        margin-top: 1.4rem;
+    }
+    .top1p5rem {
+        top: 1.5rem;
+    }
+    .remit_info {
+        margin: auto;
+        margin-bottom: 1rem;
+        padding-left: 26%;
+    }
+    .p_style {
+        margin: auto;
+        padding-left: 35%;
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+    .wx_head,
+    .style_head {
+        background-color: $wx-head-color;
+        position: relative;
+        height: 5rem;
+        color: $primary-color-text;
+        top: -2rem;
+        margin: auto;
+        text-align: center;
+        border-radius: 0.8125rem 0.8125rem 0 0;
+        width: 100%;
+    }
+    .style_head {
+        background-color: #138df0 !important;
+    }
+    .wx_head_name,
+    .select_name {
+        margin: auto;
+        padding: 0;
+        vertical-align: text-top;
+        position: inherit;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .select_name {
+        font-size: 1rem;
+    }
+    .wx_head_success {
+        color: green;
+    }
+    .wx_img {
+        width: 160px;
+        height: 160px;
+        margin: auto;
+        padding: 0;
+        position: inherit;
+        top: -0.6rem;
+    }
+    .wx_btn {
+        text-align: center;
+        margin: auto !important;
+    }
+    .center {
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (min-width: 736px) and (max-width: 995px) {
+    .userCenter {
+        .adminCard {
+            width: 98%;
+            margin-left: 1%;
+            float: left;
+            background-color: $primary-color-text;
+            ;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            border: 1px solid $list-border-color;
+            box-shadow: -1px 2px 2px $grey-shadow;
+        }
+        a {
+            font-size: 0.825rem;
+        }
+        form {
+            div {
+                height: 5.5rem;
+            }
+            span {
+                font-size: 0.5rem;
+                line-height: 1rem;
+                padding-right: 0.5rem;
+                padding-left: 1rem;
+            }
+            .holdBasicBtn {
+                width: 5rem;
+                border-radius: 0.2rem;
+                text-align: center;
+                border: none;
+                margin-top: 0 !important;
+                color: $primary-color-text;
+                background-color: $nav-user-active;
+            }
+        }
+        dl {
+            width: 92%;
+            float: right;
+            margin-top: 1rem;
+            div {
+                float: left;
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        dt,
+        dd {
+            line-height: 1.42857143;
+        }
+        dt {
+            font-weight: bold;
+            padding-top: 1rem;
+        }
+        dd {
+            margin-left: 0;
+            display: inline;
+            font-size: 0.75rem;
+        }
+        .modal-content1 {
+            width: 90%;
+            margin-left: 2%;
+            position: relative;
+            background-color: #ffffff;
+            border: 1px solid #999999;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+            background-clip: padding-box;
+            outline: 0;
+            border-radius: 0.8125rem;
+            margin-top: 6rem;
+        }
+        .all_name_div,
+        .all_apply_div {
+            top: 0;
+            background-color: #ffffff;
+            width: 100%;
+            position: absolute;
+            transition: margin-right 0.3ms;
+            margin-right: 0;
+            z-index: 2;
+        }
+        .all_apply_div {
+            height: 500px;
+            overflow-y: auto;
+        }
+        .changeLoginInput {
+            width: 95%;
+        }
+        .width21 {
+            width: 16rem !important;
+        }
+        .c_level_div {
+            top: 0rem;
+            left: -0.5rem;
+        }
+        .marginR3p2rem {
+            margin-right: 2rem;
+        }
+        .marginL1rem {
+            margin-left: 1rem;
+        }
+        form {
+            p {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 996px) and (max-width: 1169px) {
+    .userCenter {
+        .adminCard {
+            width: 90%;
+            margin-left: 5%;
+            float: left;
+            background-color: $primary-color-text;
+            ;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            border: 1px solid $list-border-color;
+            box-shadow: -1px 2px 2px $grey-shadow;
+        }
+        dl {
+            margin-top: 1rem;
+            width: 90%;
+            float: right;
+            div {
+                float: left;
+                width: 45%;
+                margin-bottom: 0.5rem;
+            }
+        }
+        dt,
+        dd {
+            line-height: 1.42857143;
+        }
+        dt {
+            font-weight: bold;
+            padding-top: 1rem;
+        }
+        dd {
+            margin-left: 0;
+            display: inline;
+            font-size: 0.75rem;
+        }
+        .modal-content1 {
+            width: 90%;
+            position: relative;
+            border-radius: 0.8125rem;
+            background-color: #ffffff;
+            border: 1px solid #999999;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+            background-clip: padding-box;
+            outline: 0;
+            margin-top: 6rem;
+        }
+        .all_name_div {
+            width: 100%;
+            transition: margin-right 0.3ms;
+            right: 0;
+        }
+        .selectName {
+            overflow-y: scroll;
+        }
+        .width21 {
+            width: 18rem !important;
+        }
+        .changeLoginBtn {
+            float: left;
+            margin-left: 50%;
+            margin-top: 1rem;
+        }
+        .all_name_div,
+        .all_apply_div {
+            background-color: $primary-color-text;
+            border: solid 1px $grey-shadow;
+            width: 50%;
+            position: absolute;
+            right: -50%;
+            button {
+                cursor: pointer;
+                background-color: $primary-color-text;
+                border: none;
+                font-size: 2rem;
+                display: inline-block;
+                color: $headline-color;
+                margin-right: 1rem;
+                outline: none;
+            }
+        }
+        .all_apply_div {
+            height: 550px;
+            overflow-y: auto;
+        }
+        dl {
+            margin-top: 1rem;
+            width: 90%;
+            float: right;
+            div {
+                float: left;
+                width: 34%;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        dt,
+        dd {
+            line-height: 1.42857143;
+        }
+        dt {
+            font-weight: bold;
+            padding-top: 1rem;
+        }
+        dd {
+            margin-left: 0;
+            display: inline;
+            font-size: 0.825rem;
+        }
+        .width100 {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1170px) and (max-width: 1280px) {
+    .userCenter {
+        .adminCard {
+            width: 45%;
+            margin-left: 3%;
+            float: left;
+            background-color: $primary-color-text;
+            ;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            border: 1px solid $list-border-color;
+            box-shadow: -1px 2px 2px $grey-shadow;
+        }
+        .all_name_div,
+        .all_apply_div {
+            background-color: $primary-color-text;
+            border: solid 1px $grey-shadow;
+            width: 50%;
+            position: absolute;
+            right: -50%;
+            button {
+                cursor: pointer;
+                background-color: $primary-color-text;
+                border: none;
+                font-size: 2rem;
+                display: inline-block;
+                color: $headline-color;
+                margin-right: 1rem;
+                outline: none;
+            }
+        }
+        .all_apply_div {
+            height: 550px;
+            overflow-y: auto;
+        }
+        .width100 {
+            width: 100%;
+        }
+        .width21 {
+            width: 20rem !important;
+        }
+    }
+    dl {
+        margin-top: 1rem;
+        width: 90%;
+        float: right;
+        div {
+            float: left;
+            width: 34%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    dt,
+    dd {
+        line-height: 1.42857143;
+    }
+    dt {
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+    dd {
+        margin-left: 0;
+        display: inline;
+        font-size: 0.825rem;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1369px) {
+    .width21 {
+        width: 24rem !important;
+    }
+    .adminCard {
+        width: 45%;
+        margin-left: 3%;
+        float: left;
+        background-color: $primary-color-text;
+        ;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border: 1px solid $list-border-color;
+        box-shadow: -1px 2px 2px $grey-shadow;
+    }
+    .all_name_div,
+    .all_apply_div {
+        background-color: $primary-color-text;
+        border: solid 1px $grey-shadow;
+        width: 50%;
+        position: absolute;
+        right: -50%;
+        button {
+            cursor: pointer;
+            background-color: $primary-color-text;
+            border: none;
+            font-size: 2rem;
+            display: inline-block;
+            color: $headline-color;
+            margin-right: 1rem;
+            outline: none;
+        }
+    }
+    .all_apply_div {
+        height: 550px;
+        overflow-y: auto;
+    }
+    dl {
+        margin-top: 1rem;
+        width: 90%;
+        float: right;
+        div {
+            float: left;
+            width: 34%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    dt,
+    dd {
+        line-height: 1.42857143;
+    }
+    dt {
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+    dd {
+        margin-left: 0;
+        display: inline;
+        font-size: 0.825rem;
+    }
+}
+
+@media screen and (min-width: 1370px) {
+    .width21 {
+        width: 26rem !important;
+    }
+    .adminCard {
+        width: 45%;
+        margin-left: 3%;
+        float: left;
+        background-color: $primary-color-text;
+        ;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        border: 1px solid $list-border-color;
+        box-shadow: -1px 2px 2px $grey-shadow;
+    }
+    .all_name_div,
+    .all_apply_div {
+        background-color: $primary-color-text;
+        border: solid 1px $grey-shadow;
+        width: 50%;
+        position: absolute;
+        right: -50%;
+        button {
+            cursor: pointer;
+            background-color: $primary-color-text;
+            border: none;
+            font-size: 2rem;
+            display: inline-block;
+            color: $headline-color;
+            margin-right: 1rem;
+            outline: none;
+        }
+    }
+    .all_apply_div {
+        height: 550px;
+        overflow-y: auto;
+    }
+    dl {
+        margin-top: 1rem;
+        width: 90%;
+        float: right;
+        div {
+            float: left;
+            width: 34%;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    dt,
+    dd {
+        line-height: 1.42857143;
+    }
+    dt {
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+    dd {
+        margin-left: 0;
+        display: inline;
+        font-size: 0.825rem;
+    }
+}
+
+.displayN {
+    display: none;
+}
+
+.displayB {
+    display: block;
+}

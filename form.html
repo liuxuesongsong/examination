@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Document</title>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ability_table.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/joggle.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/label.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			table,
+			thead,
+			tbody,
+			tfoot,
+			tr,
+			td {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				border-spacing: 0;
+			}
+			
+			.baseinfo .caption {
+				font-size: 24px;
+				padding: 1rem;
+				text-align: center;
+			}
+			
+			.baseinfo {
+				width: 1000px;
+				margin: auto;
+				border-collapse: collapse;
+			}
+			
+			.baseinfo td {
+				padding: .5rem 1rem;
+				border: 1px solid #aaa;
+			}
+			
+			.baseinfo .thead td {
+				width: 16%;
+				border: 0;
+				background: #eee;
+			}
+			
+			.baseinfo td.head {
+				border: 0;
+			}
+			
+			.baseinfo .thead td:nth-child(2n+0) {
+				background: #ddd;
+			}
+			
+			.baseinfo .solution_item {
+				padding: 1rem 0;
+			}
+			
+			.text_center {
+				text-align: center;
+			}
+			.text_left{
+				text-align: left;
+			}
+			
+			.baseinfo .answer {
+				padding: 1rem 0 1rem 4rem;
+			}
+			
+			@media print {
+				@page {
+					size: A4;
+					padding: 2cm;
+				}
+				@page :left {
+					margin-left: 2cm;
+				}
+				@page :right {
+					margin-right: 2cm;
+				}
+				.pageBreak{
+                page-break-after: always; /*强制换页的关键*/
+            }
+				.baseinfo {
+					width: 17.75cm;
+					font-size: 9pt;
+				}
+				.baseinfo .caption {
+					font-size: 18pt;
+				}
+				.baseinfo td {
+					padding: .25cm;
+					border: 1pt solid #000;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<table class="baseinfo">
+			<thead class="thead">
+				<tr class="thead">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</thead>
+			<tbody id="basic_ability_table" class="tbody">
+				<tr>
+					<td id="title" class="caption head" colspan="6">信息系统集成及服务项目经理项目管理能力水平基本情况表</td>
+				</tr>
+				<tr>
+					<td class="head" colspan="4"></td>
+					<td class="head" colspan="2">*考号:<span id="exam_code"></span></td>
+				</tr>
+				<tr>
+					<td>姓名</td>
+					<td id="name" colspan="2"></td>
+					<td id="id_type">有效证件号</td>
+					<td id="idcode" colspan="2"></td>
+				</tr>
+				<tr>
+					<td>电子邮箱</td>
+					<td id="email" colspan="2"></td>
+					<td>移动电话</td>
+					<td id="tel" colspan="2"></td>
+				</tr>
+				<tr>
+					<td>学 历</td>
+					<td id="education"></td>
+					<td colspan="2">从事信息系统集成及服务相关工作年限</td>
+					<td colspan="2">
+						<span id="year">
+                		
+                	</span>年<span id="month"> </span>月
+					</td>
+				</tr>
+
+				<tr>
+					<td>工作单位</td>
+					<td id="present_work_unit" colspan="5"></td>
+				</tr>
+				<tr id="job_history" class="text_center">
+					<td id="job_history_rowspan" >与信息系统集成及服务相关的主要工作履历</td>
+					<td colspan="2">时间</td>
+					<td colspan="2">工作单位名称</td>
+					<td>职务/岗位</td>
+
+				</tr>
+				
+					
+					
+				
+				<tr id="project_history" class="text_center">
+					<td id="project_history_rowspan" rowspan="4">曾负责的主要信息系统集成项目</td>
+					<td colspan="3">项目名称（用户名称+系统名称）<br/><span id="is_superior">（应符合项目经理登记条件要求的项目）</span></td>
+					<td colspan="1">合同金额（万元）</td>
+					<td colspan="1">软件和信息技术服务费用比例</td>
+				</tr>
+				
+				
+			</tbody>
+			<tbody id="detail">
+				<tr>
+					<td rowspan="12">项目介绍（任选以上项目之一）</td>
+					<td>项目名称</td>
+					<td id="project_name" colspan="4"></td>
+				</tr>
+				<tr>
+					<td>项目起始时间</td>
+					<td id="project_time" colspan="4"></td>
+				</tr>
+				<tr>
+					<td>所属领域</td>
+					<td id="industry" colspan="2"></td>
+					<td>项目规模</td>
+					<td colspan="2"><span id="scale"></span>（人月）</td>
+				</tr>
+				<tr>
+
+					<td>合同金额(万元)</td>
+					<td colspan="2" id="amount"></td>
+					<td>软件和信息技术服务费用比例</td>
+					<td colspan="2">
+						<span id="money_per"></span>%
+					</td>
+				</tr>
+				<tr class="pageBreak">
+					<td>计划工期</td>
+					<td colspan="2">
+						<span id="plan_duraion"></span>月
+
+					</td>
+					<td>实际工期</td>
+					<td>
+						<span id="actual_duraion"></span>月
+					</td>
+				</tr>
+				<tr>
+					<td>项目背景</td>
+					<td colspan="4">
+						<div id="project_background" class="answer"><br/><br/><br/></div>
+					</td>
+				</tr>
+				<tr>
+					<td>项目目标</td>
+					<td colspan="4">
+						<div id="project_goal" class="answer"><br/><br/><br/></div>
+					</td>
+				</tr>
+
+				<tr>
+
+					<td>预算</td>
+					<td id="budget" colspan="4"><span data="全部控制">☐</span> 全部控制 / <span data = "部分控制">☐</span> 部分控制 / <span data="只申请公司其他部门批示">☐</span> 只申请公司其他部门批示 / <span data="其他">☐</span> 其他</td>
+				</tr>
+				<tr>
+					<td>组织类型</td>
+					<td id="group_type" colspan="4"><span data="项目型">☐</span> 项目型 / <span data="强矩阵">☐</span> 强矩阵 /<span data="弱矩阵">☐</span> 弱矩阵 / <span data="平衡矩阵">☐</span> 平衡矩阵 / <span data="职能型">☐</span> 职能型 / <span data="其他">☐</span> 其他</td>
+				</tr>
+				<tr>
+					<tr>
+						<td>担任角色</td>
+						<td id="role" colspan="2"><span data="负责人">☐</span> 负责人 / <span data="分项负责人">☐</span> 分项负责人</td>
+						<td>任职</td>
+						<td id="office" colspan="1"><span data="全职">☐</span> 全职 / <span data="兼职">☐</span> 兼职</td>
+
+					</tr>
+
+					<td>主要工作内容</td>
+					<td id="main_work" colspan="4"></td>
+				</tr>
+				<tr>
+					<td>项目中主要问题及解决方法可根据实际情况填写2个以上（含2个）的问题及解决方法</td>
+					<td id="solution" colspan="5">
+						
+						<!--<div class='solution_item">
+							<div>问题类型</div>
+							<div class="solution_type answer"><span>☑</span> 技术问题 <span>☐</span> 管理问题</div>
+							<div>问题描述及原因分析</div>
+							<div class="solution_detail answer">描述</div>
+							<div>解决方案及效果（不少于200字）</div>
+							<div class="solution_detail answer">描述</div>
+						</div>-->
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2">项目管理能力自我提升描述</td>
+					<td>管理经验总结</td>
+					<td colspan="4">
+                    <div id="summary" class="answer "><br/><br/><br/></div>
+                </td>
+            </tr>
+            <tr>
+            	<td>能力提升的途径与方法</td>
+            	<td colspan="4">
+                    
+                    <div id="promote" class="answer "><br/><br/><br/></div>
+                </td>
+            </tr>
+            <tr>
+            	<td>现行工作的困惑及思考</td>
+            	<td colspan="5 ">
+                    
+                    <div id="detail_problem" class="answer "><br/><br/><br/></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

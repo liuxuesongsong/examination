@@ -1,0 +1,225 @@
+@mixin icon-tri(){
+  &:before{
+    background:url(sprite/icon.png) 0 -593px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left:65px;
+    height: 24px;
+  }
+}
+
+@mixin icon-dow(){
+  &:before{
+    background: url(sprite/icon.png) 0 -391px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 88px;
+    height: 19px;
+  }
+}
+
+@mixin icon-pdf(){
+  &:before{
+    background: url(sprite/icon.png) 0 -317px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 64px;
+    height: 18px;
+  }
+}
+
+@mixin icon-link(){
+  &:before{
+    background: url(sprite/icon.png) 0 -491px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 67px;
+    height: 22px;
+  }
+}
+
+@mixin icon-zip(){
+  &:before{
+    background: url(sprite/icon.png) 0 -271px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 64px;
+    height: 18px;
+  }
+}
+
+@mixin icon-learn(){
+  &:before{
+    background: url(sprite/icon.png) 0 -120px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 56px;
+    height: 48px;
+  }
+}
+
+@mixin icon-prog(){
+  &:before{
+    background: url(sprite/icon.png) 0 -168px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 56px;
+    height: 48px;
+  }
+}
+
+@mixin icon-tel(){
+  &:before{
+    background: url(sprite/icon.png) 0 -57px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 83px;
+    height: 60px;
+  }
+}
+@mixin icon-apply(){
+  &:before{
+    background: url(sprite/icon.png) 0 -194px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 66px;
+    height: 24px;
+  }
+}
+@mixin icon-dowOriginal(){
+  &:before{
+    background: url(sprite/icon.png) 0 -683px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 65px;
+    height: 14px;
+  }
+}
+@mixin icon-company(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -85px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 46px;
+    height: 13px;
+  }
+}
+@mixin icon-personage(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -112px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 44px;
+    height: 12px;
+  }
+}
+@mixin icon-other(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -138px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 45px;
+    height: 12px;
+  }
+}
+@mixin icon-aptitude(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -166px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 45px;
+    height: 10px;
+  }
+}
+@mixin icon-name(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -193px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 47px;
+    height: 13px;
+  }
+}
+@mixin icon-linkMan(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -303px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 47px;
+    height: 16px;
+  }
+}
+@mixin icon-phone(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -352px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 45px;
+    height: 17px;
+  }
+}
+@mixin icon-identify(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -400px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 46px;
+    height: 17px;
+  }
+}
+@mixin icon-mail(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -453px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 47px;
+    height: 11px;
+  }
+}
+@mixin icon-city(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -499px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 45px;
+    height: 17px;
+  }
+}
+@mixin icon-number(){
+  &:before{
+    background: url(sprite/icon1.png) 0 -549px no-repeat;
+    content: " ";
+    display: block;
+    float: left;
+    padding-left: 47px;
+    height: 16px;
+  }
+}
+@mixin icon-triangle(){
+  &:before{
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #1d476f;
+    border-left: 3px solid transparent;
+  }
+}

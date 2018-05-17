@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>考试报名系统</title>
+		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/data_name.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/joggle.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/chart.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/label.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/component_error.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/component_input.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/component_select.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/component_textarea.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/component_selected.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/basicInfo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/companyInfo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/applyInfo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/change-info.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/p_experience.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/changeModel.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/modelTrue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/paylist.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/enterTest.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/printInfo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/print_ability.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/payment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/score.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/alert-warning.js" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="css/csispm.css">
+		<link rel="stylesheet" type="text/css" href="css/material-components-web.css" />
+	</head>
+
+	<body>
+		<!-- container -->
+		<!-- header -->
+		<div class="globalnav">
+			<div class="container-fluid">
+				<p class="l_title">信息系统集成及服务项目管理人员能力水平考试</p>
+				<ul class="row">
+					<!--<li>
+						<a href="#">关于培训</a>
+					</li>
+					<li>
+						<a href="#">报名须知</a>
+					</li>-->
+					<!-- <li><a href="">申报流程</a></li> -->
+					<!--<li>
+						<a href="#">考试大纲</a>
+					</li>
+					<li>
+						<a href="#">考试教材</a>
+					</li>
+					<li>
+						<a href="#">考试例题</a>
+					</li>
+					<li>
+						<a href="#">缴费说明</a>
+					</li>-->
+					<li>
+						<div id="quit_div" class="dropdown">
+							<button class="dropdown_btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span id="userName">未登录</span>
+						    
+						  </button>
+							<!--  
+							<div class="dropdown-menu" aria-labelledby="dLabel">
+								<button id="open_login" class="" data-toggle="modal" data-target="#examlogin">登录</button>
+								<button><a href="index.html">退出</a></button>
+							</div>-->
+						</div>
+					</li>
+
+					<!-- <li><a href="">结业与集成资质</a></li> -->
+				</ul>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</div>
+		<div id="main" class="container-fluid displayN">
+			<div class="row">
+				<div class="userCenter" id="uesrCenter">
+					<div id="nav" class="nav">
+						<ul id="user">
+							<p>公司信息</p>
+							<li>
+								<a href="#supplement"><img src="img/company.png" />&nbsp;&nbsp;公司信息</a>
+							</li>
+							<li class="mdc-ripple-surface">
+								<a target="_self" href="#applyInfo"><img class="ver_middle" src="img/student.png" />&nbsp;&nbsp;考生信息 </a>
+							</li>
+							<p>考试报名</p>
+							<li class="mdc-ripple-surface">
+								<a target="_self" href="#signTest"><img class="ver_middle" src="img/enter.png" />&nbsp;&nbsp;报名</a>
+							</li>
+							<li class="mdc-ripple-surface">
+								<a href="#payment"><img class="ver_middle" src="img/paylist.png" />&nbsp;&nbsp;缴费</a>
+							</li>
+							
+							<li class="mdc-ripple-surface">
+								<a href="#ability_level"><img class="ver_middle" src="img/ability.png" />&nbsp;&nbsp;实践能力评价</a>
+							</li>
+							<li class="mdc-ripple-surface">
+								<a href="#print"><img class="ver_middle" src="img/print.png" />&nbsp;&nbsp;打印准考证</a>
+							</li>
+							<li class="mdc-ripple-surface">
+								<a href="#score"><img src="img/score.png" />&nbsp;&nbsp;查询成绩</a>
+							</li>
+							<p>管理员</p>
+							<li class="mdc-ripple-surface">
+								<a target="_self" href="#basicInfo"><img class="ver_middle" src="img/basic.png" />&nbsp;&nbsp;账户管理 </a>
+							</li>
+							<li class="mdc-ripple-surface">
+								<a href="#changeInfo"><img class="ver_middle" src="img/change.png" />&nbsp;&nbsp;修改登录</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="content" id="content">
+
+						<ul>
+
+							<li class="tab-pane" name="supplement" id="supplement">
+								<div class="striangleDiv ">
+									<div class="title_div">
+										<span class="striangle">
+										公司信息
+									</span>
+										<input class="mdc-button mdc-button--raised mdc-button--compact bcgroundblue floatR" data-toggle='modal' data-target='#changeApplyInfo' type="button" id="hold-company-change" value="保存" />
+									</div>
+								</div>
+
+								<div class="info_list">
+									<div class="info  grey_b3">
+										<div class="basic-form" id="company-form">
+											<!--用于发票信息填写,用于缴费核查,用于寄送发票,用于换证提醒-->
+											<div class="xs_label width21">
+												<input class="width21 input" id="c_name" />
+												<label class="label">公司全称</label>
+												<span class="message">用于发票信息填写</span>
+											</div>
+											<div class="xs_label  width21">
+												<input class="width21 input" id="account" />
+												<label class="label">公司银行账号</label>
+												<span class="message">用于缴费核查</span>
+											</div>
+											<div class="xs_label marginT2rem width21">
+												<input class="width21 input" id="c_address" />
+												<label class="label">公司地址</label>
+												<span class="message">用于寄送发票</span>
+											</div>
+											<div class="xs_label c_level_div width21">
+												<label class="c_level_label label">公司资质级别</label>
+												<select id="c_level" class="input c_level_select width21">
+													<option value="大1级">大1级</option>
+													<option value="1级">1级</option>
+													<option value="2级">2级</option>
+												</select>
+											</div>
+											
+										</div>
+									</div>
+
+									<div class="chart">
+										<img class="chart_load" src="img/load.png" />
+										<hr id="chart_hr1" class="chart_hr border_ing marginL14" />
+										<div class="chart_div">
+											<div id="c_chart_road" class="chart_road border_ing">
+												<div id="c_chart_road_in" class="chart_road_in  bcolor_ing">1</div>
+											</div>
+											<img id="c_chart_head" class="chart_head" src="img/changing.png" /><br />
+										</div>
+										<hr id="chart_hr2" class="chart_hr_long" />
+										<div class="chart_div">
+											<div id="s_chart_road" class="chart_road">
+												<div id="s_chart_road_in" class="chart_road_in">2</div>
+											</div>
+											<img id="s_chart_head" class="chart_head" src="img/willchange.png" />
+										</div>
+										<hr id="chart_hr3" class="chart_hr_long" />
+										<div class="chart_div">
+											<div id="e_chart_road" class="chart_road">
+												<div id="e_chart_road_in" class="chart_road_in">3</div>
+											</div>
+											<img id="e_chart_head" class="chart_head" src="img/willchange.png" />
+
+										</div>
+										<hr id="chart_hr4" class="chart_hr_long" />
+										<div class="chart_div">
+											<div id="p_chart_road" class="chart_road">
+												<div id="p_chart_road_in" class="chart_road_in">4</div>
+											</div>
+											<img id="p_chart_head" class="chart_head" src="img/willchange.png" />
+
+										</div>
+										<hr id="chart_hr5" class="chart_hr_long" />
+										<div class="chart_div">
+											<div id="z_chart_road" class="chart_road">
+												<div id="z_chart_road_in" class="chart_road_in">5</div>
+											</div>
+											<img id="z_chart_head" class="chart_head" src="img/willchange.png" />
+
+										</div>
+										<hr id="chart_hr6" class="chart_hr_long" />
+										<div class="chart_div">
+											<div id="l_chart_road" class="chart_road">
+												<div id="l_chart_road_in" class="chart_road_in">6</div>
+											</div>
+											<img id="l_chart_head" class="chart_head" src="img/willchange.png" />
+
+										</div>
+										<hr id="chart_hr7" class="chart_hr" />
+										<br />
+										<span id="c_chart_span" class="marginL18 chart_span color_ing">公司信息</span>
+										<span id="s_chart_span" class="marginL7 chart_span">考生信息</span>
+										<span id="e_chart_span" class="marginL7p5 chart_span">报名考试</span>
+										<span id="p_chart_span" class="marginL8p5 chart_span">缴费</span>
+										<span id="z_chart_span" class="marginL8p5 chart_span">打印准考证</span>
+										<span id="l_chart_span" class="marginL6p5 chart_span">查询成绩</span>
+										<div id="chart_step_div" class="marginT2p6rem marginL13p5" id="">
+											<h3 id="chart_h3">公司信息</h3>
+											<div id="chart_step"><span>将公司信息填写完整</span><span class="color_ed padding_l_r">></span>保存<span></span></div>
+
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="tab-pane" name="basicInfo" id="basicInfo">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle">
+										账户管理
+									</span>
+										<input class="mdc-button mdc-button--raised mdc-button--compact bcgroundblue abR0 floatR" data-toggle='modal' data-target='#changeApplyInfo' type="button" id="hold-basic-change" value="保存" />
+									</div>
+								</div>
+								<div class="info_list">
+									<div class="info grey_b3">
+										<div class="basic-form">
+											<div class="xs_label width21">
+												<input class="width21 input" name="name" id="basicInfo-name-change" />
+												<label  class="label">姓名</label>
+												<span class="message">请填入真实姓名用于审核沟通</span>
+											</div>
+											<!--座机-->
+											<div class="xs_label width21 ">
+												<input class="input width21" name="tel" id="basicInfo-tel-change" />
+												<label class="label">电话</label>
+												<span class="message" id="basic_mobile_error">请填写有效联系电话</span>
+											</div>
+
+											<div class="xs_label width21 marginT2rem">
+												<input class="width21 input" name="mail" id="basicInfo-mail-change" disabled="disabled" />
+												<label  class="label">邮箱</label>
+												<span class="message" id="basicInfo-mail-error">修改登录邮箱请点击[修改登录]。</span>
+											</div>
+											<div class="xs_label width21">
+												<input class="width21 input" name="duties" id="basicInfo-duties-change" />
+												<label class="label">职位</label>
+												<span class="message">请填真实信息用于报名审核沟通</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="tab-pane" name="changeInfo" id="changeInfo">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle">
+										修改登录
+									</span>
+										<input class="mdc-button mdc-button--raised mdc-button--compact bcgroundblue abR0 floatR" data-toggle='modal' data-target='#changeApplyInfo' type="button" id="hold-mail-mobile-change" value="保存" />
+									</div>
+								</div>
+								<div class="info_list">
+
+									<div class="info grey_b3">
+										<div class="basic-form">
+											<h2 class="change_head">账户安全</h2>
+											<div class="xs_label width21">
+												<input id="changeInfo-phone" class="width21 input" />
+												<label class="label">绑定手机</label>
+												<span id="changeInfo_phone_error message">请填写考生本人联系电话</span>
+
+											</div>
+											<div class="xs_label width21">
+												<input id="changeInfo-email" class="width21 input" />
+												<label class="label">绑定邮箱</label>
+												<span id="changeInfo-email-error message">用于登陆、收取通知。</span>
+											</div><br />
+											<span class="marginL2rem marginB1rem">发送至邮箱(<span id="test-email"> </span>)验证!</span>
+											<h2 class="change_head">账户密码</h2>
+											<button data-toggle='modal' data-target='#changeApplyInfo' id="change_password" class="mdc-button marginL2rem mdc-button--raised mdc-button--compact bcgroundblue">修改密码</button>
+
+										</div>
+									</div>
+
+								</div>
+
+							</li>
+							<li class="tab-pane" name="applyInfo" id="applyInfo">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle">
+										考生信息
+									</span>
+										<button class="cursor mdc-button mdc-button--raised mdc-button--compact bcgroundblue floatR" id="applyStudent">添加考生</button>
+										<!--<p class="applyAttention" id="applyAttention">考生信息</p>-->
+									</div>
+								</div>
+								<div class="infoCards info_list" id="infoCards">
+
+								</div>
+
+							</li>
+							<li class="tab-pane" name="signTest" id="signTest">
+								<div class="striangleDiv">
+									<span class="striangle left10">
+										报名考试
+									</span>
+								</div>
+								<div class="info_list">
+									<div class="exam_list">
+										<div id="year_head"></div>
+										<div id="examList">
+
+										</div>
+										<div class="paddingT2rem" id="year_head2"></div>
+										<div id="examList2">
+										</div>
+									</div>
+									<div id="state_list" class="state_list">
+									</div>
+								</div>
+							</li>
+							<li class="tab-pane" name="payment" id="payment">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle">
+										考试缴费
+									</span>
+										<button id="payBtn" class="cursor mdc-button mdc-button--raised mdc-button--compact bcgroundblue floatR" data-toggle="modal" data-target="#payModel">报名缴费</button>
+
+									</div>
+								</div>
+								
+								<div class=" info_list">
+									<div class="info_button">
+									<button id="n_pay_list" class="floatL cursor mdc-button mdc-button--raised mdc-button--compact ispay marginL8p3">未缴费人员</button>
+									<button id="y_pay_list" class="floatL cursor mdc-button mdc-button--raised ispay mdc-button--compact">已缴费人员</button>
+
+								</div>
+
+									<div class="pay_div infoCards" id="payList">
+
+									</div>
+								</div>
+
+							</li>
+							
+							<li class="tab-pane" name="applyInfo" id="ability_level">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle">
+										信息系统集成及服务项目经理项目管理能力水平基本情况表
+									</span>
+										<!--<p class="applyAttention" id="applyAttention">考生信息</p>-->
+									</div>
+								</div>
+								<div class="infoCards info_list" id="ability_card">
+
+								</div>
+
+							</li>
+							
+							<li class="tab-pane" name="print" id="print">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle">
+										打印准考证
+									</span>
+									</div>
+								</div>
+								<div class="infoCards info_list top10">
+									<div class="pay_div" id="printArea">
+
+									</div>
+								</div>
+							</li>
+							<li class="tab-pane" name="score" id="score">
+								<div class="striangleDiv">
+									<div class="title_div">
+										<span class="striangle" id="">
+										查询成绩
+									</span>
+										<button id="sendscore" class="cursor mdc-button mdc-button--raised mdc-button--compact bcgroundblue floatR" data-target='#changeApplyInfo' data-toggle="modal">发送邮件</button>
+									</div>
+								</div>
+								<div class="infoCards info_list top11">
+									<div class="pay_div" id="scoreList">
+
+									</div>
+								</div>
+
+							</li>
+						</ul>
+					</div>
+					<aside id="apply_list" class="mdc-temporary-drawer ">
+
+						<nav id="drawer_list_nav" style="width: 100%;" class="mdc-temporary-drawer__drawer paddingL1rem">
+							<form class="draw-list overFlow-y-auto" id="applyInfoForm">
+								<div class="floatL">
+									<label id="p_1inch" class="p_1inch"></label>
+									<img id="image" src="" tapmode style="cursor: hand; background-image: url(img/photo.png);background-size: 100% 100%;position: absolute;" width="85" height="110" onclick="getPicture()" />
+									<input type="file" name="photo" style="display: none;" id="photo" onchange="selectImage(this);" />
+								</div>
+								<div class="xs_label ">
+									<input data_val="" class=" input" id="add_name" />
+									<label class="label">姓名</label>
+									<span class="name_warn message"></span>
+								</div>
+								<div id="is_identity" class="xs_label ">
+									
+									
+									<label class="label">
+										<select id="add_select_id" class="select select_id outlineN">
+										<option value="身份证">身份证</option>
+										<option value="护照">护照</option>
+									    </select>
+									</label>
+									<input class="input" value="" id="add_identity_card" />
+									<span class="idcode_warnidcode_warn message" id="add_identity_card_error"></span>
+								</div>
+								<div class="xs_label">
+									<input data_val="" class=" input" id="add_mobile" />
+									<label class="label">移动电话</label>
+									<span class="tel_warn message" id="add_mobile_error"></span>
+								</div>
+								<div class="xs_label  ">
+									<input data_val="" class="input" id="add_mail" />
+									<label class="label">电子邮箱</label>
+									<span class="email_warn message"></span>
+								</div>
+
+								<div class="xs_label">
+									<input class="input" data_val="" id="add_register" />
+									<label class="label">临时登记编号</label>
+									<span class="register_warn message"></span>
+								</div>
+								<!--<div class="xs_label marginT3 width10rem">
+									<input type="date" class="width10rem" id="add_work_dates" />
+									<span>从事集成行业开始时间</span>
+								</div>
+								<div class="xs_label marginT3 width10rem">
+									<input type="date" class="width10rem" id="add_work_enddates" />
+									<span>从事集成行业结束时间</span>
+								</div>
+								
+								<div class="xs_label">
+									<input id="add_accumulate_money" />
+									<label>累计项目额(万)</label>
+									<span>请填写考生累计项目金额</span>
+								</div>-->
+
+								<div class="xs_label">
+									<input class="input" data_val="" id="add_major" />
+									<label class="label">专业</label>
+									<span class="major_warn message"></span>
+								</div>
+
+								<div class="xs_label c_level_div">
+									<label class="c_level_label label">学历</label>
+									<select data_val="大专以下" id="add_education" class="c_level_select input">
+										<option value="大专以下">大专以下</option>
+										<option value="大专">大专</option>
+										<option value="本科">本科</option>
+										<option value="硕士">硕士</option>
+										<option value="博士">博士</option>
+									</select>
+								</div>
+								<!--<div class="xs_label c_level_div marginL1rem">
+									<label class="c_level_label">从业年限</label>
+									<select id="add_work_life" class="c_level_select">
+										<option value="1">1年</option>
+										<option value="2">2年</option>
+										<option value="3">3年</option>
+										<option value="4">4年</option>
+										<option value="5">5年以上</option>
+										<option value="10">10年以上</option>
+									</select>
+								</div>-->
+								
+
+								<input type="button" class="mdc-button mdc-button--raised mdc-button--compact bcgroundblue marginR1rem floatR T4rem" id="applyInfoHoldBtn" value="保存" />
+								<input class="mdc-button mdc-button--raised mdc-button--compact bcgroundblue marginR2rem floatR T4rem" type="reset" value="取消" />
+							</form>
+
+						</nav>
+					</aside>
+
+					<!--警告栏-->
+					<div id="alert_warning"></div>
+				</div>
+				<!-- main -->
+			</div>
+		</div>
+		<!--未登录时页面显示登录状态-->
+		<div id="login_main_div" class="displayN login_main_div" style="">
+
+			<div id="login_main" class="login_main">
+				<ul class="navl nav-tabs width400" role="tablist">
+					<li id="login_li" role="presentation" class="active">
+						<a id="login_a" href="#login_tab" class="border_radius_left" aria-controls="profile" role="tab" data-toggle="tab">登录</a>
+					</li>
+					<li id="register_li" role="presentation">
+						<a id="register_a" href="#register_tab" class="m_border border_radius_right" aria-controls="home" role="tab" data-toggle="tab">注册</a>
+					</li>
+
+				</ul>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane" id="register_tab">
+					</div>
+					<div role="tabpanel" class="tab-pane active" id="login_tab">
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+		<div class="displayN" id="print_list_div"></div>
+		<div class="width100" id="change_model_div">
+		</div>
+		<div class="modal userCenter fade" id="payModel" aria-hidden="true" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="payModel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content1">
+					<div style="min-height: 21rem;" class="modal-body" id="select_paystyle">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登录注册模态框-->
+		<!-- container -->
+		<!-- footer -->
+	</body>
+	<script>
+	</script>
+	<!--上传照片部分-->
+	<script type="text/javascript">
+		var thisId = window.location.hash;
+		var image = "";
+
+		function selectImage(file) {
+			if(!file.files || !file.files[0]) {
+				return;
+			}
+			var reader = new FileReader();
+			reader.onload = function(evt) {
+				document.getElementById("image").src = evt.target.result;
+				image = evt.target.result;
+				//	console.log(image);
+				a_photo();
+				change_img_upload();
+			}
+			reader.readAsDataURL(file.files[0]);
+
+		}
+		/*选项卡切换*/
+
+		$(thisId).addClass("active");
+		if(thisId == "") {
+			$("#supplement").addClass("active");
+		}
+		var detectBack = {
+			initialize: function() {
+				//监听hashchange事件
+				window.addEventListener('hashchange', function() {
+					//为当前导航页附加一个tag
+					this.history.replaceState('hasHash', '', '');
+				}, false);
+				window.addEventListener('popstate', function(e) {
+					if(e.state) {
+						//侦测是用户触发的后退操作, dosomething
+						//这里刷新当前url
+						this.location.reload();
+					}
+				}, false);
+			}
+		}
+		detectBack.initialize();
+
+		function doAll() {
+			var checkBox = document.getElementById("checkBox"),
+				checks = document.getElementsByName("checks");
+			if(checkBox.checked) {
+				for(var i = 0; i < checks.length; i++) {
+					checks[i].checked = true;
+				}
+			} else {
+				for(var i = 0; i < checks.length; i++) {
+					checks[i].checked = false;
+				}
+			}
+		}
+	</script>
+	<!--抽屉-->
+	<script src="js/material-components-web.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		(function(global) {
+			[].forEach.call(document.querySelectorAll('.mdc-ripple-surface:not([data-demo-no-js])'), function(surface) {
+				mdc.ripple.MDCRipple.attachTo(surface);
+			});
+		})(this);
+	</script>
+	<script type="text/javascript">
+		var drawer_apply = document.querySelector('.mdc-temporary-drawer'),
+			MDCTemporaryDrawer = mdc.drawer.MDCTemporaryDrawer,
+			drawer_apply_open = new MDCTemporaryDrawer(drawer_apply);
+		document.querySelector('#applyStudent').addEventListener('click', function() {
+			drawer_apply_open.open = true;
+		});
+	</script>
+	<!--登录注册验证-->
+
+</html>

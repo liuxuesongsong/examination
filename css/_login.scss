@@ -1,0 +1,717 @@
+/*login*/
+
+.is_model_span {
+    font-size: 1.3rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.true_btn {
+    margin: auto !important;
+    margin-top: 2rem;
+}
+.close_position{
+    position: relative;
+    top: -2.5rem;
+    left: -1rem;
+    background-color: $login-color !important;
+}
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+
+.modal-content {
+    width: 20rem;
+    height: 10rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+}
+
+.modal-content1 {
+    width: 500px;
+    margin-left: 2.8rem;
+    margin-top: 6rem;
+     background-color: $login-color;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+}
+.top2{
+    top: 2rem !important;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  //  background-image: url(../img/loginbc.jpg);
+    background-color: #000000;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+    opacity: 0.5;
+    width: 100%;
+    filter: alpha(opacity=50);
+}
+
+.modal-header {
+    padding: 15px;
+    min-height: 16.42857143px;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    color: $primary-color;
+    text-align: center;
+    // border: 1px solid $primary-color;
+}
+
+.close {
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.5rem;
+    border: none;
+    border-radius: 50% 50%;
+    color: $primary-color-text;
+    background-color: $primary-color;
+    font-size: 1.5rem;
+    float: right;
+    outline: none;
+}
+
+.identifying {
+    width: 25%;
+}
+
+.submit1 {
+    width: 35%;
+    height: 3.375rem;
+    margin-left: 10%;
+    display: inline;
+    margin-bottom: 1rem;
+    background-color: $primary-color;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 0.8125rem;
+    font-size: 1.25rem;
+    color: $primary-color-text;
+}
+
+#mail {
+    width: 80%;
+}
+
+hr {
+    text-align: center;
+    width: 4rem;
+    border: 1px solid $primary-color;
+}
+
+.modal-body {
+    position: relative;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+}
+
+.modal-footer .btn+.btn {
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.modal-footer .btn-group .btn+.btn {
+    margin-left: -1px;
+}
+
+.modal-footer .btn-block+.btn-block {
+    margin-left: 0;
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    .modal-sm {
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 900px;
+    }
+    .modal-title {
+        margin: 0;
+        line-height: 1.42857143;
+        color: $primary-color;
+        text-align: center;
+        margin-top: 5rem;
+        // border: 1px solid $primary-color;
+    }
+    .close {
+        width: 2rem;
+        height: 2rem;
+        line-height: 1.5rem;
+        border: none;
+        border-radius: 50% 50%;
+        color: $primary-color-text;
+        background-color: $primary-color;
+        font-size: 1.5rem;
+        float: right;
+        outline: none;
+    }
+}
+
+.modal-footer:before,
+.modal-footer:after {
+    content: " ";
+    display: table;
+}
+
+.modal-footer:after {
+    clear: both;
+}
+
+.send_btn {
+    margin: auto;
+    border-radius: 5px;
+    width: 362px;
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(to right, #5ea3d7,#135680);
+    outline: none;
+    color: $primary-color-text;
+    margin-top: 50px;
+    box-shadow: 2px 2px 3px #000000;
+}
+.vd_width{
+    width: 177px !important;
+    
+}
+.cursor{
+    cursor: pointer;
+}
+ .l_title{
+         float: left;
+    margin: auto;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 22px;
+    color:  $primary-color-text;
+    
+ }
+ .marginT2{
+     margin-top: 2rem;
+ }
+ .marginR69{
+     margin-right: 69px;
+ }
+form {
+    padding-bottom: 1.5rem;
+    .formDiv_login {
+        margin: auto;
+        margin-bottom: 0rem;
+        .marginT30 {
+            margin-top: 30px;
+        }
+        .marginT29 {
+            margin-top: 29px;
+        }
+        .e_label_div {
+            width: 362px ;
+            margin: auto;
+            label {
+                font-size: 18px;
+                color: $primary-color-text;
+            }
+        }
+        img {
+            position: relative;
+            top: 5px;
+            right: 5px;
+        }
+        .e_label {
+            float: right;
+            margin-top: 13px;
+            font-size: 12px !important;
+            
+        }
+        .floatR {
+            float: right;
+        }
+        .next_float{
+              position: relative;
+         top: 1rem;
+         text-align: right;
+         color: #FFFFFF;
+        }
+        .forget_div {
+            padding-top: 45px;
+        }
+        .formInput {
+            width: 100%;
+            input {
+                margin: auto;
+                border-radius: 5px;
+                width: 362px;
+                height: 42px;
+                line-height: 42px;
+                padding-left: 1rem;
+                display: block;
+                border: none;
+                outline: none;
+                color: $primary-color-text;
+                margin-top: 0.5rem;
+                background-color: $lightBlueA800;
+            }
+        }
+        .formInputLast {
+            border: none;
+            width: 100%;
+            input {
+                border: none;
+                outline: none;
+                display: inline-block;
+                margin: auto;
+                color: $primary-color-text;
+                margin-top: 0.5rem;
+                background-color: $lightBlueA800;
+            }
+        }
+    }
+    .submit {
+        width: 26.75rem;
+        height: 3.375rem;
+        margin-left: 2rem;
+        background-color: $primary-color;
+        border: none;
+        margin-top: 0.5rem;
+        border-radius: 0.8125rem;
+        font-size: 1.25rem;
+        color: $primary-color-text;
+    }
+
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.alert .alert-link {
+    font-weight: bold;
+}
+
+.alert>p,
+.alert>ul {
+    margin-bottom: 0;
+}
+
+.alert>p+p {
+    margin-top: 5px;
+}
+
+.alert-dismissable,
+.alert-dismissible {
+    padding-right: 35px;
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+}
+
+.alert-success hr {
+    border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+    color: #2b542c;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+}
+
+.alert-info hr {
+    border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+    color: #245269;
+}
+
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+}
+
+.alert-warning hr {
+    border-top-color: #f7e1b5;
+}
+
+.alert-warning .alert-link {
+    color: #66512c;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+}
+
+.alert-danger hr {
+    border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+    color: #843534;
+}
+
+.z_index100 {
+    z-index: 100;
+}
+
+.sendMessage {
+    float: right;
+    color: $primary-color !important;
+    border-left: 1px solid $aside-bottom-color !important;
+    margin-right: 0.3rem;
+    padding-left: 0.2rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        margin-top: 1rem;
+        margin-left: 13%;
+        width: 90%;
+        height: 40rem;
+    }
+    .modal-content1 {
+        margin-top: 1rem;
+        margin-left: 3%;
+        width: 90%;
+        height: 40rem;
+    }
+    form {
+        .formDiv {
+            width: 90%;
+            height: 23.5rem;
+            border: 1px solid $table-tr-color;
+            margin-left: 5%;
+            background-color: $table-trback-color;
+            border-radius: 0.8125rem;
+            .formInput {
+                border: none;
+                height: 2.83rem;
+                color: $aside-bottom-color;
+                border-bottom: 1px solid $aside-bottom-color;
+                width: 100%;
+                margin-top: 0.5rem;
+                background-color: $table-trback-color;
+                padding-left: 2rem;
+                input {
+                    font-size: 1rem;
+                    border: none;
+                    outline: none;
+                    color: $aside-bottom-color;
+                    margin-top: 0.5rem;
+                    background-color: $table-trback-color;
+                }
+            }
+            .formInputLast {
+                border: none;
+                color: $aside-bottom-color;
+                width: 100%;
+                margin-top: 0.5rem;
+                background-color: $table-trback-color;
+                padding-left: 2rem;
+                input {
+                    font-size: 1rem;
+                    border: none;
+                    outline: none;
+                    color: $aside-bottom-color;
+                    margin-top: 0.5rem;
+                    background-color: $table-trback-color;
+                    padding-top: 0.3rem;
+                }
+            }
+        }
+        .submit {
+            width: 90%;
+            height: 3.375rem;
+            margin-left: 5%;
+            background-color: $primary-color;
+            border: none;
+            margin-top: 0.5rem;
+            border-radius: 0.8125rem;
+            font-size: 1.25rem;
+            color: $primary-color-text;
+        }
+    }
+}
+
+.login_main_div {
+    width: 100%;
+    background-image: url(../img/loginbc.jpg);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.login_main {
+    border-radius: 10px;
+    width: 500px;
+    background-color: $login-color;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    top: 8rem;
+}
+
+.navl {
+    border: none !important;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    list-style: none;
+    
+}
+
+.navl>li {
+    position: relative;
+    display: block;
+}
+
+.navl>li>a {
+    position: relative;
+    display: block;
+    
+    padding: 20px 15px;
+}
+
+.navl>li>a:hover,
+.navl>li>a:focus {
+    text-decoration: none;
+}
+
+.navl>li.disabled>a {}
+
+.navl>li.disabled>a:hover,
+.navl>li.disabled>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: not-allowed;
+}
+
+.navl .open>a,
+.navl .open>a:hover,
+.navl .open>a:focus {
+    background-color: #eeeeee;
+    border-color: #428bca;
+}
+
+.navl .nav-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.navl>li>a>img {
+    max-width: none;
+}
+
+.nav-tabs {
+    width: 100%;
+    height: 80px;
+}
+
+.nav-tabs>li {
+    float: left;
+    width: 50%;
+   // margin-bottom: -1px;
+}
+
+.m_border {
+    border-left: 1px solid $primary-color-text;
+    margin-left: -1px;
+}
+
+.nav-tabs>li>a {
+    position: relative;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    color:#FFFFFF;
+       // border-radius: 0 10px 0 0;
+    background-color: #01395a;
+    border-bottom: 1px solid $primary-color-text;
+    vertical-align: middle;
+    height: 80px;
+}
+
+.nav-tabs>li>a:hover {}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: $primary-color-text;
+    cursor: default;
+    background-color: #1a5784;
+    border-bottom: solid 1px transparent;
+}
+.border_radius_left{
+    border-radius: 10px 0 0 0;
+   // background-color: #01395a;
+}
+.back_color{
+    background-color: #01395a;
+}
+.border_radius_right{
+    border-radius: 0 10px 0 0;
+    //background-color: #01395a;
+}
+.nav-tabs.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+
+.nav-tabs.nav-justified>li {
+    float: none;
+}
+
+.nav-tabs.nav-justified>li>a {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.nav-tabs.nav-justified>.dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+    visibility: hidden;
+}
+
+.tab-content>.active {
+    display: block;
+    visibility: visible;
+}
+.color_no{
+    color: $login-error !important;
+}
+.color_yes{
+    color: #33a1f3 !important;
+}
+.marginR1rem{
+    margin-right: 1rem;
+}

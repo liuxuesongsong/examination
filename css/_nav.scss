@@ -1,0 +1,112 @@
+.globalnav,.subnav{
+    
+  width: 100%;
+  height: 3.75rem;
+  a{
+    padding:1rem 0;
+    display: block;
+    color: $primary-color-text;
+  }
+  ul{
+      float: right;
+      margin-right: 1.5rem;
+  }
+  li{
+    float: left;
+    line-height: 1.5rem;
+    color:$secondary-text-color;
+    font-size: 1rem;
+  }
+}
+.globalnav{
+  position: fixed;
+  background-color:$primary-color;
+  li{
+    margin-left: 1.5rem;
+  }
+}
+.displayB{
+    display: block;
+}
+.displayN{
+    display: none;
+}
+.subnav{
+  display: none;
+  top: 8rem;
+  width: 100%;
+  background-color: $background-color;
+  ul{
+    margin-left: 5rem;
+  }
+}
+.dropdown_btn{
+    border: none;
+    background-color:transparent;
+     line-height: 1.5rem;
+      margin-top: 1rem;
+    font-size: 1rem;
+     color: $primary-color-text;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-toggle:focus {
+  outline: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 3.8rem;
+  z-index: 1000 !important;
+  display: none;
+  float: left;
+  min-width: 100px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  text-align: left;
+  background-clip: padding-box;
+   background-color: $primary-color;
+  button{
+      margin: auto;
+      width: 100%;
+      border: none;
+      color: $primary-color-text;
+     background-color: transparent;
+      font-size: 1rem;
+      
+  }
+  button:hover{
+       background-color: $nav-user;
+  }
+  a{
+      padding: 0;
+  }
+}
+
+
+.open > .dropdown-menu {
+  display: block;
+}
+.open > a {
+  outline: 0;
+}
+
+
+  .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+@media screen and (max-width: 768px) {
+    .globalnav,.subnav{
+        display: none;
+       
+    }
+}

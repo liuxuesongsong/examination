@@ -1,0 +1,97 @@
+.banner{
+  background:url(sprite/bg.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  color: $primary-text-color;
+  line-height: 2rem;
+  padding:13rem 0 4rem;
+  h3, span{
+    margin: 0;
+  }
+  h3{
+    padding:0 2rem;
+    font-size: 1.5rem;
+    margin-top: -6rem;
+    width: 25rem;
+    box-shadow:0.5rem 0 0 $accent-color inset;
+    line-height: 3rem;
+  }
+  span{
+    display: block;
+    padding:0 0.5rem;
+    margin-left: 1.5rem;
+    width: 20rem;
+  }
+  ul{
+    margin-top: 1.5rem;
+    padding-left: 2rem;
+  }
+  li{
+    @include icon-tri();
+    &:before{
+      margin-top: 5px;
+      padding-right:0.2rem ;
+     margin-left: -3.3rem;
+    }
+  }
+  .btn{
+    display: block;
+    width: 10rem;
+   // border: 1px solid $accent-color;
+    border-radius:0.5rem;
+    text-align:center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    background-color: $accent-color;
+  }
+}
+@media screen and (max-width: 768px) {
+    .banner{
+  background:url(sprite/bg.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  color: $primary-text-color;
+  line-height: 2rem;
+  padding:13rem 0 4rem;
+  h3, span{
+      margin: 0;
+    margin-left: 0.5rem;
+  }
+  h3{
+    padding:0 1.5rem;
+    font-size: 1.5rem;
+    margin-top: -6rem;
+    width: 25rem;
+    box-shadow:0.5rem 0 0 $accent-color inset;
+    line-height: 3rem;
+  }
+  span{
+    display: block;
+    padding:0 0.5rem;
+    margin-left: 1.5rem;
+    width: 20rem;
+  }
+  ul{
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+  }
+  li{
+      margin-left: 2.5rem;
+      line-height: 2rem;
+    @include icon-tri();
+    &:before{
+        margin-top: 1px;
+      padding-right:0.2rem ;
+     margin-left: -5.8rem;
+    }
+  }
+  .btn{
+    display: block;
+    width: 10rem;
+   // border: 1px solid $accent-color;
+    border-radius:0.5rem;
+    text-align:center;
+    margin-left: 2.3rem;
+    margin-top: 2rem;
+    background-color: $accent-color;
+  }
+}
+}
